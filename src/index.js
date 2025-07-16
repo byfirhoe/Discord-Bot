@@ -15,13 +15,25 @@ client.on('ready', (c) => {
     console.log(`✅ ${c.user.tag} is online.`);
 })
 
-client.on('messageCreate',(message) => {
-    if (message.author.bot) {
-        return;
-    }
-    if (message.content === 'hello') {
-        message.reply('Welcome Autobot!');
-    }
+// client.on('messageCreate',(message) => {
+//     if (message.author.bot) {
+//         return;
+//     }
+//     if (message.content === 'hello') {
+//         message.reply('Welcome Autobot!');
+//     }
+// })
+
+client.on('interactionCreate', (interaction) => {
+    if (!interaction.isChatInputCommand()) return;
+
+    if (interaction.commandName === 'hey') {
+        interaction.reply('hey!');
+    };
+
+    if (interaction.commandName === 'ping') {
+        interaction.reply('pong!');
+    };
 })
 
 client.login(process.env.TOKEN);
