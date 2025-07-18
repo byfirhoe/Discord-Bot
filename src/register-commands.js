@@ -5,32 +5,46 @@ const { REST, Routes, ApplicationCommandOptionType} = require('discord.js');
 const commands = [
     {
         name: 'add',
-        description: 'Adds two numbers.',
+        description: 'Adds different names.',
         options: [
             {
-                name: 'first-number',
-                description: 'The first number',
-                type:ApplicationCommandOptionType.Number,
+                name: 'first-name',
+                description: 'The first name',
+                type:ApplicationCommandOptionType.String,
                 choices: [
                     {
-                        name: 'one',
-                        value: 1,
+                        name: 'Drift',
+                        value: 'Drift',
                     },
                     {
-                        name: 'two',
-                        value: 2,
+                        name: 'Rodimus',
+                        value: 'Rodimus',
                     },
                     {
-                        name: 'three',
-                        value: 3,
+                        name: 'Bumblebee',
+                        value: 'Bumblebee',
                     },
                 ],
                 required: true,
             },
             {
-                name: 'second-number',
-                description: 'The second number',
-                type:ApplicationCommandOptionType.Number,
+                name: 'second-name',
+                description: 'The second name',
+                type:ApplicationCommandOptionType.String,
+                choices: [
+                    {
+                        name: 'Ratchet',
+                        value: 'Ratchet',
+                    },
+                    {
+                        name: 'Megatron',
+                        value: 'Megatron',
+                    },
+                    {
+                        name: 'Starscream',
+                        value: 'Starscream',
+                    },
+                ],
                 required: true,
             },
         ]
