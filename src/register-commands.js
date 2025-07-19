@@ -10,60 +10,44 @@ const commands = [
             {
                 name: 'first-name',
                 description: 'The first name',
-                type:ApplicationCommandOptionType.String,
+                type: ApplicationCommandOptionType.String,
                 choices: [
-                    {
-                        name: 'Drift',
-                        value: 'Drift',
-                    },
-                    {
-                        name: 'Rodimus',
-                        value: 'Rodimus',
-                    },
-                    {
-                        name: 'Bumblebee',
-                        value: 'Bumblebee',
-                    },
+                    { name: 'Drift', value: 'Drift' },
+                    { name: 'Rodimus', value: 'Rodimus' },
+                    { name: 'Bumblebee', value: 'Bumblebee' },
                 ],
                 required: true,
             },
             {
                 name: 'second-name',
                 description: 'The second name',
-                type:ApplicationCommandOptionType.String,
+                type: ApplicationCommandOptionType.String,
                 choices: [
-                    {
-                        name: 'Ratchet',
-                        value: 'Ratchet',
-                    },
-                    {
-                        name: 'Megatron',
-                        value: 'Megatron',
-                    },
-                    {
-                        name: 'Starscream',
-                        value: 'Starscream',
-                    },
+                    { name: 'Ratchet', value: 'Ratchet' },
+                    { name: 'Megatron', value: 'Megatron' },
+                    { name: 'Starscream', value: 'Starscream' },
                 ],
                 required: true,
             },
         ]
     },
-]
+    {
+        name: 'embed',
+        description: 'Sends an Embed!',
+    }
+];
 
 const rest = new REST({ version: '10' }).setToken(process.env.TOKEN);
 
 (async () => {
     try {
         console.log('Registering slash commands...');
-
         await rest.put(
-            Routes.applicationGuildCommands(process.env.CLIENT_ID, process.env.GUILD_ID), 
+            Routes.applicationGuildCommands(process.env.CLIENT_ID, process.env.GUILD_ID),
             { body: commands }
-        )
-
-    console.log('Slash commands registered successfully.');
+        );
+        console.log('✅ Slash commands registered successfully.');
     } catch (error) {
-        console.log(`There was an error: ${error}`);
+        console.log(`❌ Error: ${error}`);
     }
 })();
