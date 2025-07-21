@@ -1,5 +1,5 @@
 require("dotenv").config();
-const { Client, IntentsBitField, EmbedBuilder } = require("discord.js");
+const { Client, IntentsBitField, EmbedBuilder, ActivityType } = require("discord.js");
 
 const client = new Client({
   intents: [
@@ -10,8 +10,33 @@ const client = new Client({
   ],
 });
 
+let status = [
+  {
+    name: 'Hide and Seek',
+    type: ActivityType.Playing,
+  },
+  {
+    name: 'old man yaoi',
+    type: ActivityType.Watching,
+  },
+  {
+    name: 'hyper-pop',
+    type: ActivityType.Listening,
+  },
+  {
+    name: '🎧 lofi relax',
+    type: ActivityType.Streaming,
+    url: 'https://www.twitch.tv/lofigirl',
+  },
+]
+
 client.on("ready", (c) => {
   console.log(`✅ ${c.user.tag} is online.`);
+
+  setInterval(() => {
+    let random = Math.floor(Math.random() * status.length);
+    client.user.setActivity(status[random]);
+  }, 10000);
 });
 
 client.on("interactionCreate", (interaction) => {
