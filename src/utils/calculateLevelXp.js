@@ -1,1 +1,1 @@
-module.exports = (level) => 100 * level || 1;
+module.exports = (level) => Math.floor(5 * Math.pow(level, 2) + 50 * level + 100)
