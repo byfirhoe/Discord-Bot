@@ -23,9 +23,9 @@ const client = new Client({
     console.log("Connected to DB.");
 
     eventHandler(client);
+    client.login(process.env.TOKEN);
   } catch (error) {
     console.log(`Error: ${error}`);
   }
 })();
 
-client.login(process.env.TOKEN);
