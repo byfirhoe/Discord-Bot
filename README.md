@@ -45,22 +45,24 @@ O en modo producción:
 
     node src/index.js
 
-```
+    ```
 
 ## 💻 Estructura del proyecto
 
- Discord-Bot/
- ├── commands/
- │   ├── admin/
- │   ├── economy/
- │   └── levels/
- ├── events/
- ├── functions/
- ├── models/
- ├── src/
- │   └── index.js
- ├── utils/
- └── .env
+Discord-Bot/
+├── commands/
+│ ├── admin/
+│ ├── economy/
+│ └── levels/
+├── events/
+├── functions/
+├── models/
+├── src/
+│ └── index.js
+├── utils/
+└── .env
+
+```
 
 ## ✅ Comandos Disponibles
 
@@ -73,4 +75,5 @@ O en modo producción:
 - `/ban @usuario`: Banea a un usuario
 
 - `/timeout @usuario`: Silencia a un usuario por un tiempo
+
 ```
