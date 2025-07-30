@@ -49,18 +49,18 @@ O en modo producción:
 
 ## 💻 Estructura del proyecto
 
-Discord-Bot/
-├── commands/
-│ ├── admin/
-│ ├── economy/
-│ └── levels/
-├── events/
-├── functions/
-├── models/
-├── src/
-│ └── index.js
-├── utils/
-└── .env
+    Discord-Bot/
+    ├── commands/
+    │ ├── admin/
+    │ ├── economy/
+    │ └── levels/
+    ├── events/
+    ├── functions/
+    ├── models/
+    ├── src/
+    │ └── index.js
+    ├── utils/
+    └── .env
 
 ```
 
