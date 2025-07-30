@@ -39,25 +39,28 @@ Este es un bot de Discord modular desarrollado con `discord.js v14`. Incluye com
 
    ```bash
     nodemon
-   O en modo producción:
+   ```
+
+O en modo producción:
 
     node src/index.js
-   ```
+
+```
 
 ## 💻 Estructura del proyecto
 
-    Discord-Bot/
-    ├── commands/
-    │   ├── admin/
-    │   ├── economy/
-    │   └── levels/
-    ├── events/
-    ├── functions/
-    ├── models/
-    ├── src/
-    │   └── index.js
-    ├── utils/
-    └── .env
+ Discord-Bot/
+ ├── commands/
+ │   ├── admin/
+ │   ├── economy/
+ │   └── levels/
+ ├── events/
+ ├── functions/
+ ├── models/
+ ├── src/
+ │   └── index.js
+ ├── utils/
+ └── .env
 
 ## ✅ Comandos Disponibles
 
@@ -70,3 +73,4 @@ Este es un bot de Discord modular desarrollado con `discord.js v14`. Incluye com
 - `/ban @usuario`: Banea a un usuario
 
 - `/timeout @usuario`: Silencia a un usuario por un tiempo
+```
