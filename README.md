@@ -45,7 +45,6 @@ Este es un bot de Discord modular desarrollado con `discord.js v14`. Incluye com
 
    ```
     node src/index.js
-
    ```
 
 ## 💻 Estructura del proyecto
