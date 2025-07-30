@@ -43,9 +43,8 @@ Este es un bot de Discord modular desarrollado con `discord.js v14`. Incluye com
 
 5. O en modo producción:
 
-   node src/index.js
-
    ```
+    node src/index.js
 
    ```
 
