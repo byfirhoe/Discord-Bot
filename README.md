@@ -62,18 +62,14 @@ O en modo producción:
     ├── utils/
     └── .env
 
-```
-
 ## ✅ Comandos Disponibles
 
-- `/daily`: Reclama monedas diarias
+    - `/daily`: Reclama monedas diarias
 
-- `/level`: Muestra tu nivel y XP
+    - `/level`: Muestra tu nivel y XP
 
-- `/kick @usuario`: Expulsa a un usuario
+    - `/kick @usuario`: Expulsa a un usuario
 
-- `/ban @usuario`: Banea a un usuario
+    - `/ban @usuario`: Banea a un usuario
 
-- `/timeout @usuario`: Silencia a un usuario por un tiempo
-
-```
+    - `/timeout @usuario`: Silencia a un usuario por un tiempo
